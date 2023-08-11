@@ -1,0 +1,7195 @@
+{
+	"id": "aa41cd09-631b-4584-b643-d86a603844e2",
+	"name": "Sendinblue",
+	"timestamp": "2023-08-11T10:26:48.444Z",
+	"collection_id": "26243941-c5456dfd-df5c-4ebe-90a7-4025e6688d55",
+	"folder_id": 0,
+	"environment_id": "26243941-876eb0a0-7f45-4ef3-b280-b1bfa058041c",
+	"totalPass": 523,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-08-11T10:25:41.798Z",
+	"totalFail": 55,
+	"results": [
+		{
+			"id": "19f45c5a-00f5-4351-a7ae-ce627dc7af12",
+			"name": "Get all Companies",
+			"url": "https://api.sendinblue.com/v3/companies?filters=veniam elit in&linkedContactsIds=13396752&linkedDealsIds=veniam elit in&page=13396752&limit=13396752&sort=desc&sortBy=veniam elit in",
+			"time": 244,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				244
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "9d9eeeaf-66e9-433b-b159-dc95adefe045",
+			"name": "Create a company",
+			"url": "https://api.sendinblue.com/v3/companies",
+			"time": 408,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status is 400": false,
+				"Response body contains a message property": true,
+				"The message property is a string": true,
+				"Message is a non-empty string": true,
+				"Response time is less than 200ms": false,
+				"Response time is less than 1000ms": true,
+				"Verify that the 'id' field is present and is a string": false,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Response status is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response body contains a message property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The message property is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the 'id' field is present and is a string": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				408
+			],
+			"allTests": [
+				{
+					"Response status is 400": false,
+					"Response body contains a message property": true,
+					"The message property is a string": true,
+					"Message is a non-empty string": true,
+					"Response time is less than 200ms": false,
+					"Response time is less than 1000ms": true,
+					"Verify that the 'id' field is present and is a string": false,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "8b5713c0-a4eb-4f1f-8e0c-b49deb645a39",
+			"name": "Get company attributes",
+			"url": "https://api.sendinblue.com/v3/companies/attributes",
+			"time": 218,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 400": false,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				218
+			],
+			"allTests": [
+				{
+					"Response status code is 400": false,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "7616a33b-ed44-472c-b129-f1ca5a494b99",
+			"name": "Link and Unlink company with contact and deal",
+			"url": "https://api.sendinblue.com/v3/companies/link-unlink/veniam elit in",
+			"time": 214,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code is 400": false,
+				"Content-Type is present": true,
+				"A message property is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"A message property is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				214
+			],
+			"allTests": [
+				{
+					"Status code is 400": false,
+					"Content-Type is present": true,
+					"A message property is present": true
+				}
+			]
+		},
+		{
+			"id": "26a71852-e893-42f8-b5e6-a85bd4e34e89",
+			"name": "Get a company",
+			"url": "https://api.sendinblue.com/v3/companies/veniam elit in",
+			"time": 194,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Content-Type is present": true,
+				"A result property is present and is 'success'": true,
+				"Response status is 400": false,
+				"Response time is less than 200ms": true,
+				"Response time is less than 1000ms": true
+			},
+			"testPassFailCounts": {
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"A result property is present and is 'success'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				194
+			],
+			"allTests": [
+				{
+					"Content-Type is present": true,
+					"A result property is present and is 'success'": true,
+					"Response status is 400": false,
+					"Response time is less than 200ms": true,
+					"Response time is less than 1000ms": true
+				}
+			]
+		},
+		{
+			"id": "55f3d73c-564a-4e98-8f61-ecc8f2f54702",
+			"name": "Delete a company",
+			"url": "https://api.sendinblue.com/v3/companies/veniam elit in",
+			"time": 204,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 400": false,
+				"Response has the required field 'message'": true,
+				"The 'message' field is a non-empty string": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required field 'message'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The 'message' field is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				204
+			],
+			"allTests": [
+				{
+					"Response status code is 400": false,
+					"Response has the required field 'message'": true,
+					"The 'message' field is a non-empty string": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "4d50aeb4-9c1a-41b8-8ed9-8c712c315a78",
+			"name": "Update a company",
+			"url": "https://api.sendinblue.com/v3/companies/veniam elit in",
+			"time": 177,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 400": false,
+				"Response has the required fields": true,
+				"Status code name has string": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				177
+			],
+			"allTests": [
+				{
+					"Response status code is 400": false,
+					"Response has the required fields": true,
+					"Status code name has string": false
+				}
+			]
+		},
+		{
+			"id": "f530a534-f15e-451e-836c-ced5cf8ac2a8",
+			"name": "Get pipeline stages",
+			"url": "https://api.sendinblue.com/v3/crm/pipeline/details",
+			"time": 208,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 400": false,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				208
+			],
+			"allTests": [
+				{
+					"Response status code is 400": false,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "ab0e4b55-d143-4652-ac71-d022bd861f14",
+			"name": "Get all deals",
+			"url": "https://api.sendinblue.com/v3/crm/deals?filter[attributes]=veniam elit in&filter[linkedCompaniesIds]=veniam elit in&filter[linkedContactsIds]=veniam elit in&offset=13396752&limit=13396752&sort=desc",
+			"time": 511,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response has a status code of 400": false,
+				"Response has a message property": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Response has a status code of 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has a message property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				511
+			],
+			"allTests": [
+				{
+					"Response has a status code of 400": false,
+					"Response has a message property": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "7901ff1b-cd6b-4624-988f-afe7e394e829",
+			"name": "Create a deal",
+			"url": "https://api.sendinblue.com/v3/crm/deals",
+			"time": 196,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code should be 500": false,
+				"Response has required field - message": true,
+				"Response time is less than 500ms": true,
+				"The message should be a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code should be 500": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The message should be a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				196
+			],
+			"allTests": [
+				{
+					"Response status code should be 500": false,
+					"Response has required field - message": true,
+					"Response time is less than 500ms": true,
+					"The message should be a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "ad78d9b6-6d81-4158-a0d4-1de912085167",
+			"name": "Link and Unlink a deal with contacts and companies",
+			"url": "https://api.sendinblue.com/v3/crm/deals/link-unlink/veniam elit in",
+			"time": 186,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 400": false,
+				"Response has the required fields": true,
+				"Message is a non-empty string": true,
+				"The error message provides a meaningful description": true,
+				"Response time is in an acceptable range": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The error message provides a meaningful description": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is in an acceptable range": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				186
+			],
+			"allTests": [
+				{
+					"Response status code is 400": false,
+					"Response has the required fields": true,
+					"Message is a non-empty string": true,
+					"The error message provides a meaningful description": true,
+					"Response time is in an acceptable range": true
+				}
+			]
+		},
+		{
+			"id": "ce0efdd6-358a-4950-81bd-96ada36bb5f0",
+			"name": "Get deal attributes",
+			"url": "https://api.sendinblue.com/v3/crm/attributes/deals",
+			"time": 308,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 500": false,
+				"title is a non-empty string": false,
+				"type is a non-empty string": false,
+				"status is a number": false,
+				"detail is a non-empty string": false,
+				"Validate the error response structure": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 500": {
+					"pass": 0,
+					"fail": 1
+				},
+				"title is a non-empty string": {
+					"pass": 0,
+					"fail": 1
+				},
+				"type is a non-empty string": {
+					"pass": 0,
+					"fail": 1
+				},
+				"status is a number": {
+					"pass": 0,
+					"fail": 1
+				},
+				"detail is a non-empty string": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Validate the error response structure": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				308
+			],
+			"allTests": [
+				{
+					"Response status code is 500": false,
+					"title is a non-empty string": false,
+					"type is a non-empty string": false,
+					"status is a number": false,
+					"detail is a non-empty string": false,
+					"Validate the error response structure": false
+				}
+			]
+		},
+		{
+			"id": "c4012586-2416-4f17-95dc-93d9f4f96b21",
+			"name": "Get a deal",
+			"url": "https://api.sendinblue.com/v3/crm/deals/veniam elit in",
+			"time": 248,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 400": false,
+				"Response has the required fields": true,
+				"message is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				248
+			],
+			"allTests": [
+				{
+					"Response status code is 400": false,
+					"Response has the required fields": true,
+					"message is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "d76568eb-94a0-46cc-bcea-04c010c1bc92",
+			"name": "Delete a deal",
+			"url": "https://api.sendinblue.com/v3/crm/deals/veniam elit in",
+			"time": 196,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				196
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "fb630cca-cf25-4d05-985c-4167642d5c87",
+			"name": "Update a deal",
+			"url": "https://api.sendinblue.com/v3/crm/deals/veniam elit in",
+			"time": 187,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				187
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "364d71fa-5a17-45f9-a93d-c0d4e4465748",
+			"name": "Get all tasks",
+			"url": "https://api.sendinblue.com/v3/crm/tasks?filter[type]=veniam elit in&filter[status]=done&filter[date]=range&filter[assignTo]=veniam elit in&filter[contacts]=veniam elit in&filter[deals]=veniam elit in&filter[companies]=veniam elit in&dateFrom=-41398727&dateTo=-41398727&offset=13396752&limit=50&sort=desc&sortBy=name",
+			"time": 192,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Content-Type is present": true,
+				"Response status code is 400": false,
+				"Response time is within acceptable range": true
+			},
+			"testPassFailCounts": {
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is within acceptable range": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				192
+			],
+			"allTests": [
+				{
+					"Content-Type is present": true,
+					"Response status code is 400": false,
+					"Response time is within acceptable range": true
+				}
+			]
+		},
+		{
+			"id": "74c2941e-cc53-4cdd-bb27-3d1378e68cd8",
+			"name": "Create a task",
+			"url": "https://api.sendinblue.com/v3/crm/tasks",
+			"time": 194,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Content-Type is present": true,
+				"Response status is 400": false,
+				"Response message is not empty": true,
+				"Data field is an array": false,
+				"Each data object has field and message properties": false
+			},
+			"testPassFailCounts": {
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response message is not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data field is an array": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Each data object has field and message properties": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				194
+			],
+			"allTests": [
+				{
+					"Content-Type is present": true,
+					"Response status is 400": false,
+					"Response message is not empty": true,
+					"Data field is an array": false,
+					"Each data object has field and message properties": false
+				}
+			]
+		},
+		{
+			"id": "8bac8043-de0a-4dde-8d4f-4d899c50dd61",
+			"name": "Get all task types",
+			"url": "https://api.sendinblue.com/v3/crm/tasktypes",
+			"time": 198,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 200": false,
+				"id should be a non-empty string": false,
+				"Title is a non-empty string": false,
+				"Response is an array with at least one element": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"id should be a non-empty string": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Title is a non-empty string": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response is an array with at least one element": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				198
+			],
+			"allTests": [
+				{
+					"Response status code is 200": false,
+					"id should be a non-empty string": false,
+					"Title is a non-empty string": false,
+					"Response is an array with at least one element": false
+				}
+			]
+		},
+		{
+			"id": "830d9422-0f88-4a42-acc8-77d4b518f4b4",
+			"name": "Get a task",
+			"url": "https://api.sendinblue.com/v3/crm/tasks/veniam elit in",
+			"time": 208,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 400": false,
+				"Response has required fields": true,
+				"message is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				208
+			],
+			"allTests": [
+				{
+					"Response status code is 400": false,
+					"Response has required fields": true,
+					"message is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "bf6f51b7-daa9-4bc9-bf19-ad0137bedd6a",
+			"name": "Delete a task",
+			"url": "https://api.sendinblue.com/v3/crm/tasks/veniam elit in",
+			"time": 208,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code is 400": false,
+				"Response has a message property": true,
+				"Response content type is JSON": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has a message property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response content type is JSON": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				208
+			],
+			"allTests": [
+				{
+					"Status code is 400": false,
+					"Response has a message property": true,
+					"Response content type is JSON": true
+				}
+			]
+		},
+		{
+			"id": "255cfe05-4dcb-4e0e-90f1-d3c8e25e9780",
+			"name": "Update a task",
+			"url": "https://api.sendinblue.com/v3/crm/tasks/veniam elit in",
+			"time": 255,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 400": false,
+				"Response has the required fields": true,
+				"Message is a non-empty string": true,
+				"Response time is in an acceptable range": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is in an acceptable range": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				255
+			],
+			"allTests": [
+				{
+					"Response status code is 400": false,
+					"Response has the required fields": true,
+					"Message is a non-empty string": true,
+					"Response time is in an acceptable range": true
+				}
+			]
+		},
+		{
+			"id": "288d7648-f678-4939-b2dd-eeed9fe69287",
+			"name": "Get all notes",
+			"url": "https://api.sendinblue.com/v3/crm/notes?entity=deals&entityIds=veniam elit in&dateFrom=-41398727&dateTo=-41398727&offset=13396752&limit=50&sort=desc",
+			"time": 270,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 400": false,
+				"Message is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				270
+			],
+			"allTests": [
+				{
+					"Response status code is 400": false,
+					"Message is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "fc42ac5a-b0f5-4276-bf29-a395f2a77e18",
+			"name": "Create a note",
+			"url": "https://api.sendinblue.com/v3/crm/notes",
+			"time": 203,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 400": false,
+				"Response has the required field - message": true,
+				"The meesage should be a non-empty string": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The meesage should be a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				203
+			],
+			"allTests": [
+				{
+					"Response status code is 400": false,
+					"Response has the required field - message": true,
+					"The meesage should be a non-empty string": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "50d40aee-dba1-46a7-a53b-8dd0d789e578",
+			"name": "Get a note",
+			"url": "https://api.sendinblue.com/v3/crm/notes/veniam elit in",
+			"time": 202,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 400": false,
+				"Response has the required field - message": true,
+				"The meesage should be a non-empty string": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The meesage should be a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				202
+			],
+			"allTests": [
+				{
+					"Response status code is 400": false,
+					"Response has the required field - message": true,
+					"The meesage should be a non-empty string": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "19e63473-623b-4114-8b5f-0a4ad342c0f9",
+			"name": "Update a note",
+			"url": "https://api.sendinblue.com/v3/crm/notes/veniam elit in",
+			"time": 205,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 400": false,
+				"Response has the required field - message": true,
+				"The meesage should be a non-empty string": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The meesage should be a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				205
+			],
+			"allTests": [
+				{
+					"Response status code is 400": false,
+					"Response has the required field - message": true,
+					"The meesage should be a non-empty string": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "2a4498e2-5a7d-49df-b68e-8b54285c6a1f",
+			"name": "Delete a note",
+			"url": "https://api.sendinblue.com/v3/crm/notes/veniam elit in",
+			"time": 168,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 400": false,
+				"Response has the required field - message": true,
+				"The meesage should be a non-empty string": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The meesage should be a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				168
+			],
+			"allTests": [
+				{
+					"Response status code is 400": false,
+					"Response has the required field - message": true,
+					"The meesage should be a non-empty string": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "b7ac5644-6f45-42f6-9fc2-6b5445c012aa",
+			"name": "Get all files",
+			"url": "https://api.sendinblue.com/v3/crm/files?entity=deals&entityIds=veniam elit in&dateFrom=-41398727&dateTo=-41398727&offset=13396752&limit=50&sort=desc",
+			"time": 232,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 400": false,
+				"Response has the required field - message": true,
+				"The meesage should be a non-empty string": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The meesage should be a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				232
+			],
+			"allTests": [
+				{
+					"Response status code is 400": false,
+					"Response has the required field - message": true,
+					"The meesage should be a non-empty string": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "c1c67e6c-85a6-4644-b947-884eddf8187e",
+			"name": "Upload a file",
+			"url": "https://api.sendinblue.com/v3/crm/files",
+			"time": 213,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 400": false,
+				"Response has the required field - message": true,
+				"The meesage should be a non-empty string": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The meesage should be a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				213
+			],
+			"allTests": [
+				{
+					"Response status code is 400": false,
+					"Response has the required field - message": true,
+					"The meesage should be a non-empty string": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "7e5ed5db-2d19-470f-bb38-99bb4c5bf983",
+			"name": "Download a file",
+			"url": "https://api.sendinblue.com/v3/crm/files/veniam elit in",
+			"time": 262,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 400": false,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				262
+			],
+			"allTests": [
+				{
+					"Response status code is 400": false,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "45265000-df64-4e19-8dd9-bb769a3798e3",
+			"name": "Delete a file",
+			"url": "https://api.sendinblue.com/v3/crm/files/veniam elit in",
+			"time": 172,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 400": false,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				172
+			],
+			"allTests": [
+				{
+					"Response status code is 400": false,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "c6fb6fce-6a91-4376-bbd9-243d095e60b7",
+			"name": "Get file details",
+			"url": "https://api.sendinblue.com/v3/crm/files/veniam elit in/data",
+			"time": 204,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 400": false,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				204
+			],
+			"allTests": [
+				{
+					"Response status code is 400": false,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "7c50a78e-3518-4cfb-a9a7-52a797ea8e3a",
+			"name": "Get an email campaign report",
+			"url": "https://api.sendinblue.com/v3/emailCampaigns/13396752",
+			"time": 193,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 404": false,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				193
+			],
+			"allTests": [
+				{
+					"Response status code is 404": false,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "8e9f37ab-dc7a-44df-b04a-34c5c2d4f6ae",
+			"name": "Update an email campaign",
+			"url": "https://api.sendinblue.com/v3/emailCampaigns/13396752",
+			"time": 193,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 400": false,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				193
+			],
+			"allTests": [
+				{
+					"Response status code is 400": false,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "d248409c-c80e-46f5-bd46-0f0a10186909",
+			"name": "Delete an email campaign",
+			"url": "https://api.sendinblue.com/v3/emailCampaigns/13396752",
+			"time": 174,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 404": false,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				174
+			],
+			"allTests": [
+				{
+					"Response status code is 404": false,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "be8f2619-035d-40db-aa16-632c346f2d27",
+			"name": "Send an email campaign immediately, based on campaignId",
+			"url": "https://api.sendinblue.com/v3/emailCampaigns/13396752/sendNow",
+			"time": 185,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 404": false,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				185
+			],
+			"allTests": [
+				{
+					"Response status code is 404": false,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "08b95ec3-8ed2-42e9-85c5-db76b3465c7a",
+			"name": "Send an email campaign to your test list",
+			"url": "https://api.sendinblue.com/v3/emailCampaigns/13396752/sendTest",
+			"time": 179,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 404": false,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				179
+			],
+			"allTests": [
+				{
+					"Response status code is 404": false,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "ccc12cbd-89cd-453b-b0b0-4a71c38902f8",
+			"name": "Update an email campaign status",
+			"url": "https://api.sendinblue.com/v3/emailCampaigns/13396752/status",
+			"time": 212,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 404": false,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				212
+			],
+			"allTests": [
+				{
+					"Response status code is 404": false,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "b7c3cb7e-fa7f-4be0-ab7c-9f272db88173",
+			"name": "Send the report of a campaign",
+			"url": "https://api.sendinblue.com/v3/emailCampaigns/13396752/sendReport",
+			"time": 214,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 404": false,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				214
+			],
+			"allTests": [
+				{
+					"Response status code is 404": false,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "0a053444-22b0-46ca-a18b-c0d5c58924df",
+			"name": "Get an A/B test email campaign results",
+			"url": "https://api.sendinblue.com/v3/emailCampaigns/13396752/abTestCampaignResult",
+			"time": 201,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 404": false,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				201
+			],
+			"allTests": [
+				{
+					"Response status code is 404": false,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "e1245008-7134-443f-80f4-7c34152aeccf",
+			"name": "Get a shared template url",
+			"url": "https://api.sendinblue.com/v3/emailCampaigns/13396752/sharedUrl",
+			"time": 275,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 404": false,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				275
+			],
+			"allTests": [
+				{
+					"Response status code is 404": false,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "4e30401e-0b86-4800-b881-a93404ff731b",
+			"name": "Export the recipients of an email campaign",
+			"url": "https://api.sendinblue.com/v3/emailCampaigns/13396752/exportRecipients",
+			"time": 187,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				187
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2b160117-2dfd-4c68-84db-8c1cab85ed22",
+			"name": "Return all your created email campaigns",
+			"url": "https://api.sendinblue.com/v3/emailCampaigns?type=classic&status=archive&startDate=veniam elit in&endDate=veniam elit in&limit=50&offset=0&sort=desc",
+			"time": 221,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				221
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "c64d7682-e583-4aa3-acc1-7a594e017cd8",
+			"name": "Create an email campaign",
+			"url": "https://api.sendinblue.com/v3/emailCampaigns",
+			"time": 227,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				227
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "adfb3c7b-54fa-4ed2-a9e7-c230924bac8c",
+			"name": "Upload an image to your account's image gallery",
+			"url": "https://api.sendinblue.com/v3/emailCampaigns/images",
+			"time": 182,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 400": false,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				182
+			],
+			"allTests": [
+				{
+					"Response status code is 400": false,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "c787b42f-18a1-413e-98bb-3b1ed871bff9",
+			"name": "Returns the information for all your created SMS campaigns",
+			"url": "https://api.sendinblue.com/v3/smsCampaigns?status=archive&startDate=veniam elit in&endDate=veniam elit in&limit=500&offset=0&sort=desc",
+			"time": 258,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				258
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "b55dea7a-5ced-471b-bcf9-23c353fc7ac7",
+			"name": "Creates an SMS campaign",
+			"url": "https://api.sendinblue.com/v3/smsCampaigns",
+			"time": 173,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				173
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "1914a62e-31bb-4bdf-b1a0-02030fd3c9af",
+			"name": "Get an SMS campaign",
+			"url": "https://api.sendinblue.com/v3/smsCampaigns/13396752",
+			"time": 226,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				226
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "54b00c3a-26e3-4078-b6e7-748d8b879603",
+			"name": "Update an SMS campaign",
+			"url": "https://api.sendinblue.com/v3/smsCampaigns/13396752",
+			"time": 183,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 404": false,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				183
+			],
+			"allTests": [
+				{
+					"Response status code is 404": false,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "8dc37d05-afa0-4566-adaf-442c5a21f96d",
+			"name": "Delete an SMS campaign",
+			"url": "https://api.sendinblue.com/v3/smsCampaigns/13396752",
+			"time": 222,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 404": false,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				222
+			],
+			"allTests": [
+				{
+					"Response status code is 404": false,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "f926f4e7-d5ca-47b5-a2dc-fa91443cdbc2",
+			"name": "Send your SMS campaign immediately",
+			"url": "https://api.sendinblue.com/v3/smsCampaigns/13396752/sendNow",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true
+				}
+			]
+		},
+		{
+			"id": "8b6236c3-d16c-4056-9492-d6a5542baa71",
+			"name": "Update a campaign's status",
+			"url": "https://api.sendinblue.com/v3/smsCampaigns/13396752/status",
+			"time": 200,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 404": false,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				200
+			],
+			"allTests": [
+				{
+					"Response status code is 404": false,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "7bc36116-5281-4849-bf39-c0220954d394",
+			"name": "Send a test SMS campaign",
+			"url": "https://api.sendinblue.com/v3/smsCampaigns/13396752/sendTest",
+			"time": 183,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				183
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "d26eab99-b046-4d45-80de-8dba58f48feb",
+			"name": "Export an SMS campaign's recipients",
+			"url": "https://api.sendinblue.com/v3/smsCampaigns/13396752/exportRecipients",
+			"time": 179,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				179
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "64425fd3-e4f7-4cb6-a349-a25db018a73e",
+			"name": "Send an SMS campaign's report",
+			"url": "https://api.sendinblue.com/v3/smsCampaigns/13396752/sendReport",
+			"time": 186,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				186
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "4c67e1d9-1625-40bd-bf11-325641473255",
+			"name": "Send a message as an agent",
+			"url": "https://api.sendinblue.com/v3/conversations/messages",
+			"time": 173,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				173
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "b71f3cd9-4ebd-4aed-abdc-40591f23f3d8",
+			"name": "Get a message",
+			"url": "https://api.sendinblue.com/v3/conversations/messages/veniam elit in",
+			"time": 210,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				210
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "bdde65d6-29db-4ee5-8992-f0f2b8003e0f",
+			"name": "Update a message sent by an agent",
+			"url": "https://api.sendinblue.com/v3/conversations/messages/veniam elit in",
+			"time": 207,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				207
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "0df061a3-9cfe-4bad-9ca9-f6be3c2de68b",
+			"name": "Delete a message sent by an agent",
+			"url": "https://api.sendinblue.com/v3/conversations/messages/veniam elit in",
+			"time": 186,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				186
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "a91d15d6-8442-4147-97e4-8c9fe4207563",
+			"name": "Sets agent’s status to online for 2-3 minutes",
+			"url": "https://api.sendinblue.com/v3/conversations/agentOnlinePing",
+			"time": 173,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				173
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "a2454f88-5b9c-489b-bcf8-657b64dc2cd7",
+			"name": "Send an automated message to a visitor",
+			"url": "https://api.sendinblue.com/v3/conversations/pushedMessages",
+			"time": 203,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				203
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "e0f0207e-8b04-4fed-8a52-5cd2b95bf707",
+			"name": "Get an automated message",
+			"url": "https://api.sendinblue.com/v3/conversations/pushedMessages/veniam elit in",
+			"time": 203,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				203
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "635a8857-b7fe-43bb-8592-e06798f93877",
+			"name": "Update an automated message",
+			"url": "https://api.sendinblue.com/v3/conversations/pushedMessages/veniam elit in",
+			"time": 168,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				168
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "03182c6d-42af-4e7b-885e-cf9fb74b0ad8",
+			"name": "Delete an automated message",
+			"url": "https://api.sendinblue.com/v3/conversations/pushedMessages/veniam elit in",
+			"time": 175,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				175
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "8deefe5e-31b3-4f73-ad99-5761af6064cc",
+			"name": "Get all the contacts",
+			"url": "https://api.sendinblue.com/v3/contacts?limit=50&offset=0&modifiedSince=2022-02-01T00:00:00.000&sort=desc",
+			"time": 261,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				261
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "38a7abd9-041a-425d-9d13-13f8f94098c3",
+			"name": "Create a contact",
+			"url": "https://api.sendinblue.com/v3/contacts",
+			"time": 195,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				195
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "ae94ec21-2b3a-4617-af7d-d9422dd63f72",
+			"name": "Create Contact via DOI (Double-Opt-In) Flow",
+			"url": "https://api.sendinblue.com/v3/contacts/doubleOptinConfirmation",
+			"time": 185,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				185
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "1690ae8b-722b-42ee-865a-add2dc4cade2",
+			"name": "Update multiple contacts",
+			"url": "https://api.sendinblue.com/v3/contacts/batch",
+			"time": 229,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				229
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "89b8ebb2-a2b7-4f6d-98c6-9bd37f0304e8",
+			"name": "Export contacts",
+			"url": "https://api.sendinblue.com/v3/contacts/export",
+			"time": 177,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				177
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "b80d5e7e-6895-49d2-83d3-cc628ab0a92d",
+			"name": "Import contacts",
+			"url": "https://api.sendinblue.com/v3/contacts/import",
+			"time": 246,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				246
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "5f5c39b4-870d-43c0-baad-aab648c292ef",
+			"name": "Get a contact's details",
+			"url": "https://api.sendinblue.com/v3/contacts/{{email}}",
+			"time": 211,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				211
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "b14f9338-a74c-4366-ab8e-cf4de23fb20a",
+			"name": "Delete a contact",
+			"url": "https://api.sendinblue.com/v3/contacts/{{email}}",
+			"time": 197,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				197
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "c2ede0b7-eca2-4534-893f-84701714a2b2",
+			"name": "Update a contact",
+			"url": "https://api.sendinblue.com/v3/contacts/veniam elit in",
+			"time": 172,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				172
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "555e2237-aaf5-495b-b4fb-7b016ae2d873",
+			"name": "Get email campaigns' statistics for a contact",
+			"url": "https://api.sendinblue.com/v3/contacts/veniam elit in/campaignStats?startDate=veniam elit in&endDate=veniam elit in",
+			"time": 215,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				215
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "747b3b04-14af-4826-877e-3d60497ddb0f",
+			"name": "Get all folders",
+			"url": "https://api.sendinblue.com/v3/contacts/folders?limit=10&offset=0&sort=desc",
+			"time": 209,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				209
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "00ff48be-484b-4198-b940-a256c587394e",
+			"name": "Create a folder",
+			"url": "https://api.sendinblue.com/v3/contacts/folders",
+			"time": 196,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				196
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "5043feec-2701-4d0f-8e71-0149f7a317da",
+			"name": "Returns a folder's details",
+			"url": "https://api.sendinblue.com/v3/contacts/folders/13396752",
+			"time": 200,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				200
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "f50ca4fd-28ec-4671-9c66-8fad7da0e907",
+			"name": "Update a folder",
+			"url": "https://api.sendinblue.com/v3/contacts/folders/13396752",
+			"time": 208,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				208
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "c2c17904-dcc2-4cb2-a48a-0254d08657ca",
+			"name": "Delete a folder (and all its lists)",
+			"url": "https://api.sendinblue.com/v3/contacts/folders/13396752",
+			"time": 164,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				164
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "490e8d0b-f448-4e6e-8b41-62e71ace5e96",
+			"name": "Get lists in a folder",
+			"url": "https://api.sendinblue.com/v3/contacts/folders/veniam elit in/lists?limit=10&offset=0&sort=desc",
+			"time": 194,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				194
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "4d596032-2df9-40e3-848b-6783fabe5e92",
+			"name": "Get all the lists",
+			"url": "https://api.sendinblue.com/v3/contacts/lists?limit=10&offset=0&sort=desc",
+			"time": 193,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				193
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "6170a6fc-f3e8-413b-9df8-1e22f072eec4",
+			"name": "Create a list",
+			"url": "https://api.sendinblue.com/v3/contacts/lists",
+			"time": 191,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				191
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "10cce0de-d572-4ecd-bf3a-abbca306ee62",
+			"name": "Get contacts in a list",
+			"url": "https://api.sendinblue.com/v3/contacts/lists/13396752/contacts?modifiedSince=veniam elit in&limit=50&offset=0&sort=desc",
+			"time": 247,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				247
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "53c98163-5a62-4f15-b397-c6c77c3956d9",
+			"name": "Add existing contacts to a list",
+			"url": "https://api.sendinblue.com/v3/contacts/lists/13396752/contacts/add",
+			"time": 203,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				203
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "884881c7-393f-40bd-93dd-ec698c77d6fd",
+			"name": "Delete a contact from a list",
+			"url": "https://api.sendinblue.com/v3/contacts/lists/13396752/contacts/remove",
+			"time": 229,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				229
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "995090a7-f292-43e0-b20a-97ca2051d869",
+			"name": "Get a list's details",
+			"url": "https://api.sendinblue.com/v3/contacts/lists/13396752",
+			"time": 209,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				209
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "ab4f3aec-72ee-473d-9e1d-ab109fb09e2e",
+			"name": "Update a list",
+			"url": "https://api.sendinblue.com/v3/contacts/lists/13396752",
+			"time": 197,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				197
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "ca7ee0f6-1be5-4cd1-882a-b13919370799",
+			"name": "Delete a list",
+			"url": "https://api.sendinblue.com/v3/contacts/lists/13396752",
+			"time": 174,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				174
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "ca4fcb65-8d74-4156-ba99-ed112c9ac213",
+			"name": "List all attributes",
+			"url": "https://api.sendinblue.com/v3/contacts/attributes",
+			"time": 190,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				190
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "e8470410-f681-40f3-af01-3d8c094ca667",
+			"name": "Update contact attribute",
+			"url": "https://api.sendinblue.com/v3/contacts/attributes/global/veniam elit in",
+			"time": 184,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "fcd559f1-8d5e-4cb4-82e4-fe2ff34d2da5",
+			"name": "Create contact attribute",
+			"url": "https://api.sendinblue.com/v3/contacts/attributes/global/veniam elit in",
+			"time": 184,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "83550e9a-d95e-437a-aadb-83fa26fdccc3",
+			"name": "Delete an attribute",
+			"url": "https://api.sendinblue.com/v3/contacts/attributes/global/veniam elit in",
+			"time": 170,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has 'code' property": true,
+				"Response has 'message' property": true,
+				"Response has the required field - message": true,
+				"Response time is less than 500ms": true,
+				"Content-Type is present": true,
+				"Response status code should be 401": true,
+				"Verify 'code' property is of type string": true,
+				"Verify that 'message' property is of type string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'code' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'message' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code should be 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'code' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that 'message' property is of type string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				170
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has 'code' property": true,
+					"Response has 'message' property": true,
+					"Response has the required field - message": true,
+					"Response time is less than 500ms": true,
+					"Content-Type is present": true,
+					"Response status code should be 401": true,
+					"Verify 'code' property is of type string": true,
+					"Verify that 'message' property is of type string": true
+				}
+			]
+		},
+		{
+			"id": "20d225b6-ddf4-420d-98bf-9a3df1fa124b",
+			"name": "Send a transactional email",
+			"url": "https://api.sendinblue.com/v3/smtp/email",
+			"time": 163,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has the required field - messageId": true,
+				"message is a non-empty string": true,
+				"Response time is less than 500ms": true,
+				"Response body is not empty": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - messageId": {
+					"pass": 1,
+					"fail": 0
+				},
+				"message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				163
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has the required field - messageId": true,
+					"message is a non-empty string": true,
+					"Response time is less than 500ms": true,
+					"Response body is not empty": true
+				}
+			]
+		},
+		{
+			"id": "0932536e-43e2-40ac-b377-b2c43e019ab6",
+			"name": "Get the list of transactional emails on the basis of allowed filters",
+			"url": "https://api.sendinblue.com/v3/smtp/emails?email=veniam elit in&templateId=13396752&messageId=veniam elit in&startDate=veniam elit in&endDate=veniam elit in&sort=desc&limit=500&offset=0",
+			"time": 243,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has the required field - messageId": true,
+				"message is a non-empty string": true,
+				"Response time is less than 500ms": true,
+				"Response body is not empty": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - messageId": {
+					"pass": 1,
+					"fail": 0
+				},
+				"message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				243
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has the required field - messageId": true,
+					"message is a non-empty string": true,
+					"Response time is less than 500ms": true,
+					"Response body is not empty": true
+				}
+			]
+		},
+		{
+			"id": "35601ee2-5170-4cc8-9e15-a45edc2f9862",
+			"name": "Delete scheduled emails by batchId or messageId",
+			"url": "https://api.sendinblue.com/v3/smtp/email/4320f270-a4e3-4a2e-b591-edfe30a5e627",
+			"time": 164,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has the required field - messageId": true,
+				"message is a non-empty string": true,
+				"Response time is less than 500ms": true,
+				"Response body is not empty": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - messageId": {
+					"pass": 1,
+					"fail": 0
+				},
+				"message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				164
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has the required field - messageId": true,
+					"message is a non-empty string": true,
+					"Response time is less than 500ms": true,
+					"Response body is not empty": true
+				}
+			]
+		},
+		{
+			"id": "7f77b5f5-4991-43a3-9207-7f4de5715e72",
+			"name": "Get the personalized content of a sent transactional email",
+			"url": "https://api.sendinblue.com/v3/smtp/emails/veniam elit in",
+			"time": 200,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has the required field - messageId": true,
+				"message is a non-empty string": true,
+				"Response time is less than 500ms": true,
+				"Response body is not empty": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - messageId": {
+					"pass": 1,
+					"fail": 0
+				},
+				"message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				200
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has the required field - messageId": true,
+					"message is a non-empty string": true,
+					"Response time is less than 500ms": true,
+					"Response body is not empty": true
+				}
+			]
+		},
+		{
+			"id": "dff4c9f3-27a5-4d04-83ee-8526bd035b98",
+			"name": "Fetch scheduled emails by batchId or messageId",
+			"url": "https://api.sendinblue.com/v3/smtp/emailStatus/4320f270-a4e3-4a2e-b591-edfe30a5e627?startDate=2022-02-02&endDate=2022-03-02&sort=desc&status=queued&limit=100&offset=0",
+			"time": 181,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has the required field - messageId": true,
+				"message is a non-empty string": true,
+				"Response time is less than 500ms": true,
+				"Response body is not empty": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - messageId": {
+					"pass": 1,
+					"fail": 0
+				},
+				"message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				181
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has the required field - messageId": true,
+					"message is a non-empty string": true,
+					"Response time is less than 500ms": true,
+					"Response body is not empty": true
+				}
+			]
+		},
+		{
+			"id": "0d69bfdc-d093-427c-87b1-6aaf81a84a89",
+			"name": "Get the list of email templates",
+			"url": "https://api.sendinblue.com/v3/smtp/templates?templateStatus=false&limit=50&offset=0&sort=desc",
+			"time": 200,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				200
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a3ec1d6d-97b9-4cf5-afa9-7ecf956e1ca3",
+			"name": "Create an email template",
+			"url": "https://api.sendinblue.com/v3/smtp/templates",
+			"time": 177,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				177
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "250f248d-7984-4362-b554-dee2b8e11ac3",
+			"name": "Returns the template information",
+			"url": "https://api.sendinblue.com/v3/smtp/templates/13396752",
+			"time": 198,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				198
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "0103b3f1-0587-4144-9216-6121e4baeb80",
+			"name": "Update an email template",
+			"url": "https://api.sendinblue.com/v3/smtp/templates/13396752",
+			"time": 230,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				230
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e2b90b6e-0ba3-4927-b1df-2ff301b15cea",
+			"name": "Delete an inactive email template",
+			"url": "https://api.sendinblue.com/v3/smtp/templates/13396752",
+			"time": 187,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				187
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "43916f9d-8a08-49c5-8bc0-40102368a373",
+			"name": "Send a template to your test list",
+			"url": "https://api.sendinblue.com/v3/smtp/templates/13396752/sendTest",
+			"time": 195,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				195
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "cf3b6547-697f-4614-89b8-5bbcc70909e9",
+			"name": "Get your transactional email activity aggregated over a period of time",
+			"url": "https://api.sendinblue.com/v3/smtp/statistics/aggregatedReport?startDate=veniam elit in&endDate=veniam elit in&days=13396752&tag=veniam elit in",
+			"time": 541,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				541
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "34213baa-1db9-4bde-b945-07f94aa37a14",
+			"name": "Get your transactional email activity aggregated per day",
+			"url": "https://api.sendinblue.com/v3/smtp/statistics/reports?limit=10&offset=0&startDate=veniam elit in&endDate=veniam elit in&days=13396752&tag=veniam elit in&sort=desc",
+			"time": 195,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				195
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e065a3b6-a5e5-42fd-937a-3af59c6a22c7",
+			"name": "Get all your transactional email activity (unaggregated events)",
+			"url": "https://api.sendinblue.com/v3/smtp/statistics/events?days=11&messageId=202212281024.62341432715@smtp-relay.mailin.fr",
+			"time": 205,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				205
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d597586b-4516-4374-bdd2-4afa44ae9b2b",
+			"name": "Get the list of blocked or unsubscribed transactional contacts",
+			"url": "https://api.sendinblue.com/v3/smtp/blockedContacts?startDate=veniam elit in&endDate=veniam elit in&limit=50&offset=0&senders=ullamco,dolor elit aute&sort=desc",
+			"time": 210,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				210
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1b241352-a30d-4253-8d22-3ccb396e9516",
+			"name": "Unblock or resubscribe a transactional contact",
+			"url": "https://api.sendinblue.com/v3/smtp/blockedContacts/veniam elit in",
+			"time": 179,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				179
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e90084ce-0952-4f66-9ef6-f65781813784",
+			"name": "Get the list of blocked domains",
+			"url": "https://api.sendinblue.com/v3/smtp/blockedDomains",
+			"time": 469,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				469
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f1de4233-fa2c-4d7c-b99e-ec0366ac05ba",
+			"name": "Add a new domain to the list of blocked domains",
+			"url": "https://api.sendinblue.com/v3/smtp/blockedDomains",
+			"time": 212,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				212
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d2f706e1-46e1-46c4-ab6e-3f80a26e24ae",
+			"name": "Unblock an existing domain from the list of blocked domains",
+			"url": "https://api.sendinblue.com/v3/smtp/blockedDomains/veniam elit in",
+			"time": 586,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				586
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2873f748-c535-4c74-8d2d-d7fd022a6c01",
+			"name": "Delete hardbounces",
+			"url": "https://api.sendinblue.com/v3/smtp/deleteHardbounces",
+			"time": 535,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				535
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "515060b2-050e-4816-854c-7c7d6bf92462",
+			"name": "Delete an SMTP transactional log",
+			"url": "https://api.sendinblue.com/v3/smtp/log/veniam elit in",
+			"time": 524,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				524
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "5d22adbb-134b-4d4c-b67f-d10936e6a447",
+			"name": "Get the list of all the events for the received emails.",
+			"url": "https://api.sendinblue.com/v3/inbound/events?sender=veniam elit in&startDate=1947-08-13&endDate=1947-08-13&limit=100&offset=0&sort=desc",
+			"time": 460,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				460
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2aa44098-e6ab-4338-9d7c-6c2d9864320a",
+			"name": "Fetch all events history for one particular received email.",
+			"url": "https://api.sendinblue.com/v3/inbound/events/veniam elit in",
+			"time": 203,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				203
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2cc6556d-50e5-4361-a3c4-cdf0f15f6b78",
+			"name": "Retrieve inbound attachment with download token.",
+			"url": "https://api.sendinblue.com/v3/inbound/attachments/veniam elit in",
+			"time": 215,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				215
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "22f14010-01e4-45cc-b55c-2c873a2b8dca",
+			"name": "Send SMS message to a mobile number",
+			"url": "https://api.sendinblue.com/v3/transactionalSMS/sms",
+			"time": 195,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				195
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f34521ce-fe3b-455d-84a3-583a102fea85",
+			"name": "Get your SMS activity aggregated over a period of time",
+			"url": "https://api.sendinblue.com/v3/transactionalSMS/statistics/aggregatedReport?startDate=veniam elit in&endDate=veniam elit in&days=13396752&tag=veniam elit in",
+			"time": 195,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				195
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "69834b40-e4b4-4751-9155-28e4bbaab3ae",
+			"name": "Get your SMS activity aggregated per day",
+			"url": "https://api.sendinblue.com/v3/transactionalSMS/statistics/reports?startDate=veniam elit in&endDate=veniam elit in&days=13396752&tag=veniam elit in&sort=desc",
+			"time": 204,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				204
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d5a791a0-fc7a-41f5-889a-d7b25bae5bfe",
+			"name": "Get all your SMS activity (unaggregated events)",
+			"url": "https://api.sendinblue.com/v3/transactionalSMS/statistics/events?limit=50&startDate=veniam elit in&endDate=veniam elit in&offset=0&days=13396752&phoneNumber=veniam elit in&event=bounces&tags=veniam elit in&sort=desc",
+			"time": 237,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				237
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2398a2ff-6016-4ad7-be50-2cf9799cce82",
+			"name": "Get all webhooks",
+			"url": "https://api.sendinblue.com/v3/webhooks?type=transactional&sort=desc",
+			"time": 196,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				196
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "4401c623-7cb6-4552-b562-c62941e589ec",
+			"name": "Create a webhook",
+			"url": "https://api.sendinblue.com/v3/webhooks",
+			"time": 171,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				171
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "7881b112-7791-41af-892f-5fb2f7e521e7",
+			"name": "Get a webhook details",
+			"url": "https://api.sendinblue.com/v3/webhooks/13396752",
+			"time": 216,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				216
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e1f10331-3aa1-48c2-8afe-bc8ff9020628",
+			"name": "Update a webhook",
+			"url": "https://api.sendinblue.com/v3/webhooks/13396752",
+			"time": 191,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				191
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "7f5c1ec2-2a47-455c-bf74-4dbed5ca96ce",
+			"name": "Delete a webhook",
+			"url": "https://api.sendinblue.com/v3/webhooks/13396752",
+			"time": 177,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				177
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8dc0c76e-88dc-4b91-b5f8-9d3197eb6d4a",
+			"name": "Add Email and/or SMS credits to a specific child account",
+			"url": "https://api.sendinblue.com/v3/reseller/children/veniam elit in/credits/add",
+			"time": 184,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				184
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8929f2c2-7338-4483-bbc4-05cc2f2c4ae8",
+			"name": "Remove Email and/or SMS credits from a specific child account",
+			"url": "https://api.sendinblue.com/v3/reseller/children/veniam elit in/credits/remove",
+			"time": 192,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				192
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a4cb3900-d1cd-4a55-a317-4a8effc56bc5",
+			"name": "Associate a dedicated IP to the child",
+			"url": "https://api.sendinblue.com/v3/reseller/children/veniam elit in/ips/associate",
+			"time": 174,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				174
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "4dd9566a-2e00-40a5-8d48-351e179fcc77",
+			"name": "Dissociate a dedicated IP to the child",
+			"url": "https://api.sendinblue.com/v3/reseller/children/veniam elit in/ips/dissociate",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				176
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c403d9e4-47a3-4a7a-be66-b9c723911a02",
+			"name": "Get all sender domains for a specific child account",
+			"url": "https://api.sendinblue.com/v3/reseller/children/veniam elit in/domains",
+			"time": 211,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				211
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1e5a556c-1841-43f2-8151-8af82387a1a8",
+			"name": "Create a domain for a child account",
+			"url": "https://api.sendinblue.com/v3/reseller/children/veniam elit in/domains",
+			"time": 179,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				179
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "5c1ce771-04ef-4d4e-bbe8-373e95b10d89",
+			"name": "Update the sender domain of reseller's child based on the childIdentifier and domainName passed",
+			"url": "https://api.sendinblue.com/v3/reseller/children/veniam elit in/domains/veniam elit in",
+			"time": 243,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				243
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8f916f8c-0520-432b-9eee-6760f44853a1",
+			"name": "Delete the sender domain of the reseller child based on the childIdentifier and domainName passed",
+			"url": "https://api.sendinblue.com/v3/reseller/children/veniam elit in/domains/veniam elit in",
+			"time": 177,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				177
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6ed1191d-a526-4ed9-901a-c5ad1cf8379c",
+			"name": "Get a child account's details",
+			"url": "https://api.sendinblue.com/v3/reseller/children/veniam elit in",
+			"time": 207,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				207
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "cbbbd9bb-d5a0-48c6-93cd-de22ea65bc57",
+			"name": "Update info of reseller's child based on the child identifier supplied",
+			"url": "https://api.sendinblue.com/v3/reseller/children/veniam elit in",
+			"time": 175,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				175
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "38b10144-c1fb-46d2-b9e5-d6536e9493f9",
+			"name": "Delete a single reseller child based on the child identifier supplied",
+			"url": "https://api.sendinblue.com/v3/reseller/children/veniam elit in",
+			"time": 168,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				168
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a6e1a033-7e66-4bc4-8168-05ac3de8f82f",
+			"name": "Update info of reseller's child account status based on the identifier supplied",
+			"url": "https://api.sendinblue.com/v3/reseller/children/veniam elit in/accountStatus",
+			"time": 201,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				201
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "70679c8d-07bc-4d90-93d5-82650fc17516",
+			"name": "Get the status of a reseller's child account creation, whether it is successfully created (exists) or not based on the childIdentifier supplied",
+			"url": "https://api.sendinblue.com/v3/reseller/children/veniam elit in/accountCreationStatus",
+			"time": 199,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				199
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "0484c27f-9451-457a-9b13-b89a0dc8d0af",
+			"name": "Get session token to access Sendinblue (SSO)",
+			"url": "https://api.sendinblue.com/v3/reseller/children/veniam elit in/auth",
+			"time": 193,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				193
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "73d6a52a-6a00-4859-9e0a-9dcdaff68556",
+			"name": "Get the list of all children accounts",
+			"url": "https://api.sendinblue.com/v3/reseller/children?limit=10&offset=0",
+			"time": 190,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				190
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "9ee02191-2bf7-460a-9019-114b74991701",
+			"name": "Creates a reseller child",
+			"url": "https://api.sendinblue.com/v3/reseller/children",
+			"time": 190,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				190
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "229d5eb4-06a3-4df4-b1db-378d4953bfad",
+			"name": "Return all the processes for your account",
+			"url": "https://api.sendinblue.com/v3/processes?limit=10&offset=0&sort=desc",
+			"time": 244,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				244
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d0ef6373-7fde-4b0a-a439-8e358ac419a8",
+			"name": "Return the informations for a process",
+			"url": "https://api.sendinblue.com/v3/processes/13396752",
+			"time": 209,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				209
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "db0e7eba-886f-4156-af42-570490c8f671",
+			"name": "Get the details of requested master account",
+			"url": "https://api.sendinblue.com/v3/corporate/masterAccount",
+			"time": 215,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				215
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "10eddb36-34c0-4d93-8455-25f1edd5b570",
+			"name": "Get the list of all the sub-accounts of the master account.",
+			"url": "https://api.sendinblue.com/v3/corporate/subAccount?offset=-41398727&limit=-41398727",
+			"time": 218,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				218
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "61dccf31-24bf-468d-889f-e6325fb48865",
+			"name": "Create a new sub-account under a master account.",
+			"url": "https://api.sendinblue.com/v3/corporate/subAccount",
+			"time": 184,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				184
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "9e77e493-08c5-440a-82c7-45d0410b73ed",
+			"name": "Generate SSO token to access Sendinblue",
+			"url": "https://api.sendinblue.com/v3/corporate/subAccount/ssoToken",
+			"time": 180,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				180
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "3ba9a42e-b031-4ed0-a088-90eb964476db",
+			"name": "Get sub-account details",
+			"url": "https://api.sendinblue.com/v3/corporate/subAccount/13396752",
+			"time": 185,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				185
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "fa42285d-3e13-444c-93f6-3f6118fabeb4",
+			"name": "Delete a sub-account",
+			"url": "https://api.sendinblue.com/v3/corporate/subAccount/13396752",
+			"time": 178,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				178
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "042e3c17-66ef-4af5-8cc8-ee175ca858dc",
+			"name": "Update sub-account plan",
+			"url": "https://api.sendinblue.com/v3/corporate/subAccount/13396752/plan",
+			"time": 170,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				170
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "4ed15a80-a881-4b32-b564-f29c6c048dc2",
+			"name": "Get your account information, plan and credits details",
+			"url": "https://api.sendinblue.com/v3/account",
+			"time": 183,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				183
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "13a7acff-56ce-47a8-ac20-64e9b615aae2",
+			"name": "Get the list of all your senders",
+			"url": "https://api.sendinblue.com/v3/senders?ip=veniam elit in&domain=veniam elit in",
+			"time": 195,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				195
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d24ee267-4fee-4d6f-820f-973088269292",
+			"name": "Create a new sender",
+			"url": "https://api.sendinblue.com/v3/senders",
+			"time": 171,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				171
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "35db8b1c-8386-4adb-9c85-60f0217f5ec4",
+			"name": "Get all the dedicated IPs for your account",
+			"url": "https://api.sendinblue.com/v3/senders/ips",
+			"time": 186,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				186
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d51b96fb-6037-43aa-bf39-852103c0b1e4",
+			"name": "Update a sender",
+			"url": "https://api.sendinblue.com/v3/senders/13396752",
+			"time": 182,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				182
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "288357e9-f896-420d-ba77-1b2e5343014e",
+			"name": "Delete a sender",
+			"url": "https://api.sendinblue.com/v3/senders/13396752",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				176
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "064d9a59-bcfe-42d8-b83d-0a528242e84d",
+			"name": "Get all the dedicated IPs for a sender",
+			"url": "https://api.sendinblue.com/v3/senders/13396752/ips",
+			"time": 198,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				198
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 33629,
+	"collection": {
+		"requests": [
+			{
+				"id": "19f45c5a-00f5-4351-a7ae-ce627dc7af12",
+				"method": "GET"
+			},
+			{
+				"id": "9d9eeeaf-66e9-433b-b159-dc95adefe045",
+				"method": "POST"
+			},
+			{
+				"id": "8b5713c0-a4eb-4f1f-8e0c-b49deb645a39",
+				"method": "GET"
+			},
+			{
+				"id": "7616a33b-ed44-472c-b129-f1ca5a494b99",
+				"method": "PATCH"
+			},
+			{
+				"id": "26a71852-e893-42f8-b5e6-a85bd4e34e89",
+				"method": "GET"
+			},
+			{
+				"id": "55f3d73c-564a-4e98-8f61-ecc8f2f54702",
+				"method": "DELETE"
+			},
+			{
+				"id": "4d50aeb4-9c1a-41b8-8ed9-8c712c315a78",
+				"method": "PATCH"
+			},
+			{
+				"id": "f530a534-f15e-451e-836c-ced5cf8ac2a8",
+				"method": "GET"
+			},
+			{
+				"id": "ab0e4b55-d143-4652-ac71-d022bd861f14",
+				"method": "GET"
+			},
+			{
+				"id": "7901ff1b-cd6b-4624-988f-afe7e394e829",
+				"method": "POST"
+			},
+			{
+				"id": "ad78d9b6-6d81-4158-a0d4-1de912085167",
+				"method": "PATCH"
+			},
+			{
+				"id": "ce0efdd6-358a-4950-81bd-96ada36bb5f0",
+				"method": "GET"
+			},
+			{
+				"id": "c4012586-2416-4f17-95dc-93d9f4f96b21",
+				"method": "GET"
+			},
+			{
+				"id": "d76568eb-94a0-46cc-bcea-04c010c1bc92",
+				"method": "DELETE"
+			},
+			{
+				"id": "fb630cca-cf25-4d05-985c-4167642d5c87",
+				"method": "PATCH"
+			},
+			{
+				"id": "364d71fa-5a17-45f9-a93d-c0d4e4465748",
+				"method": "GET"
+			},
+			{
+				"id": "74c2941e-cc53-4cdd-bb27-3d1378e68cd8",
+				"method": "POST"
+			},
+			{
+				"id": "8bac8043-de0a-4dde-8d4f-4d899c50dd61",
+				"method": "GET"
+			},
+			{
+				"id": "830d9422-0f88-4a42-acc8-77d4b518f4b4",
+				"method": "GET"
+			},
+			{
+				"id": "bf6f51b7-daa9-4bc9-bf19-ad0137bedd6a",
+				"method": "DELETE"
+			},
+			{
+				"id": "255cfe05-4dcb-4e0e-90f1-d3c8e25e9780",
+				"method": "PATCH"
+			},
+			{
+				"id": "288d7648-f678-4939-b2dd-eeed9fe69287",
+				"method": "GET"
+			},
+			{
+				"id": "fc42ac5a-b0f5-4276-bf29-a395f2a77e18",
+				"method": "POST"
+			},
+			{
+				"id": "50d40aee-dba1-46a7-a53b-8dd0d789e578",
+				"method": "GET"
+			},
+			{
+				"id": "19e63473-623b-4114-8b5f-0a4ad342c0f9",
+				"method": "PATCH"
+			},
+			{
+				"id": "2a4498e2-5a7d-49df-b68e-8b54285c6a1f",
+				"method": "DELETE"
+			},
+			{
+				"id": "b7ac5644-6f45-42f6-9fc2-6b5445c012aa",
+				"method": "GET"
+			},
+			{
+				"id": "c1c67e6c-85a6-4644-b947-884eddf8187e",
+				"method": "POST"
+			},
+			{
+				"id": "7e5ed5db-2d19-470f-bb38-99bb4c5bf983",
+				"method": "GET"
+			},
+			{
+				"id": "45265000-df64-4e19-8dd9-bb769a3798e3",
+				"method": "DELETE"
+			},
+			{
+				"id": "c6fb6fce-6a91-4376-bbd9-243d095e60b7",
+				"method": "GET"
+			},
+			{
+				"id": "7c50a78e-3518-4cfb-a9a7-52a797ea8e3a",
+				"method": "GET"
+			},
+			{
+				"id": "8e9f37ab-dc7a-44df-b04a-34c5c2d4f6ae",
+				"method": "PUT"
+			},
+			{
+				"id": "d248409c-c80e-46f5-bd46-0f0a10186909",
+				"method": "DELETE"
+			},
+			{
+				"id": "be8f2619-035d-40db-aa16-632c346f2d27",
+				"method": "POST"
+			},
+			{
+				"id": "08b95ec3-8ed2-42e9-85c5-db76b3465c7a",
+				"method": "POST"
+			},
+			{
+				"id": "ccc12cbd-89cd-453b-b0b0-4a71c38902f8",
+				"method": "PUT"
+			},
+			{
+				"id": "b7c3cb7e-fa7f-4be0-ab7c-9f272db88173",
+				"method": "POST"
+			},
+			{
+				"id": "0a053444-22b0-46ca-a18b-c0d5c58924df",
+				"method": "GET"
+			},
+			{
+				"id": "e1245008-7134-443f-80f4-7c34152aeccf",
+				"method": "GET"
+			},
+			{
+				"id": "4e30401e-0b86-4800-b881-a93404ff731b",
+				"method": "POST"
+			},
+			{
+				"id": "2b160117-2dfd-4c68-84db-8c1cab85ed22",
+				"method": "GET"
+			},
+			{
+				"id": "c64d7682-e583-4aa3-acc1-7a594e017cd8",
+				"method": "POST"
+			},
+			{
+				"id": "adfb3c7b-54fa-4ed2-a9e7-c230924bac8c",
+				"method": "POST"
+			},
+			{
+				"id": "c787b42f-18a1-413e-98bb-3b1ed871bff9",
+				"method": "GET"
+			},
+			{
+				"id": "b55dea7a-5ced-471b-bcf9-23c353fc7ac7",
+				"method": "POST"
+			},
+			{
+				"id": "1914a62e-31bb-4bdf-b1a0-02030fd3c9af",
+				"method": "GET"
+			},
+			{
+				"id": "54b00c3a-26e3-4078-b6e7-748d8b879603",
+				"method": "PUT"
+			},
+			{
+				"id": "8dc37d05-afa0-4566-adaf-442c5a21f96d",
+				"method": "DELETE"
+			},
+			{
+				"id": "f926f4e7-d5ca-47b5-a2dc-fa91443cdbc2",
+				"method": "POST"
+			},
+			{
+				"id": "8b6236c3-d16c-4056-9492-d6a5542baa71",
+				"method": "PUT"
+			},
+			{
+				"id": "7bc36116-5281-4849-bf39-c0220954d394",
+				"method": "POST"
+			},
+			{
+				"id": "d26eab99-b046-4d45-80de-8dba58f48feb",
+				"method": "POST"
+			},
+			{
+				"id": "64425fd3-e4f7-4cb6-a349-a25db018a73e",
+				"method": "POST"
+			},
+			{
+				"id": "4c67e1d9-1625-40bd-bf11-325641473255",
+				"method": "POST"
+			},
+			{
+				"id": "b71f3cd9-4ebd-4aed-abdc-40591f23f3d8",
+				"method": "GET"
+			},
+			{
+				"id": "bdde65d6-29db-4ee5-8992-f0f2b8003e0f",
+				"method": "PUT"
+			},
+			{
+				"id": "0df061a3-9cfe-4bad-9ca9-f6be3c2de68b",
+				"method": "DELETE"
+			},
+			{
+				"id": "a91d15d6-8442-4147-97e4-8c9fe4207563",
+				"method": "POST"
+			},
+			{
+				"id": "a2454f88-5b9c-489b-bcf8-657b64dc2cd7",
+				"method": "POST"
+			},
+			{
+				"id": "e0f0207e-8b04-4fed-8a52-5cd2b95bf707",
+				"method": "GET"
+			},
+			{
+				"id": "635a8857-b7fe-43bb-8592-e06798f93877",
+				"method": "PUT"
+			},
+			{
+				"id": "03182c6d-42af-4e7b-885e-cf9fb74b0ad8",
+				"method": "DELETE"
+			},
+			{
+				"id": "8deefe5e-31b3-4f73-ad99-5761af6064cc",
+				"method": "GET"
+			},
+			{
+				"id": "38a7abd9-041a-425d-9d13-13f8f94098c3",
+				"method": "POST"
+			},
+			{
+				"id": "ae94ec21-2b3a-4617-af7d-d9422dd63f72",
+				"method": "POST"
+			},
+			{
+				"id": "1690ae8b-722b-42ee-865a-add2dc4cade2",
+				"method": "POST"
+			},
+			{
+				"id": "89b8ebb2-a2b7-4f6d-98c6-9bd37f0304e8",
+				"method": "POST"
+			},
+			{
+				"id": "b80d5e7e-6895-49d2-83d3-cc628ab0a92d",
+				"method": "POST"
+			},
+			{
+				"id": "5f5c39b4-870d-43c0-baad-aab648c292ef",
+				"method": "GET"
+			},
+			{
+				"id": "b14f9338-a74c-4366-ab8e-cf4de23fb20a",
+				"method": "DELETE"
+			},
+			{
+				"id": "c2ede0b7-eca2-4534-893f-84701714a2b2",
+				"method": "PUT"
+			},
+			{
+				"id": "555e2237-aaf5-495b-b4fb-7b016ae2d873",
+				"method": "GET"
+			},
+			{
+				"id": "747b3b04-14af-4826-877e-3d60497ddb0f",
+				"method": "GET"
+			},
+			{
+				"id": "00ff48be-484b-4198-b940-a256c587394e",
+				"method": "POST"
+			},
+			{
+				"id": "5043feec-2701-4d0f-8e71-0149f7a317da",
+				"method": "GET"
+			},
+			{
+				"id": "f50ca4fd-28ec-4671-9c66-8fad7da0e907",
+				"method": "PUT"
+			},
+			{
+				"id": "c2c17904-dcc2-4cb2-a48a-0254d08657ca",
+				"method": "DELETE"
+			},
+			{
+				"id": "490e8d0b-f448-4e6e-8b41-62e71ace5e96",
+				"method": "GET"
+			},
+			{
+				"id": "4d596032-2df9-40e3-848b-6783fabe5e92",
+				"method": "GET"
+			},
+			{
+				"id": "6170a6fc-f3e8-413b-9df8-1e22f072eec4",
+				"method": "POST"
+			},
+			{
+				"id": "10cce0de-d572-4ecd-bf3a-abbca306ee62",
+				"method": "GET"
+			},
+			{
+				"id": "53c98163-5a62-4f15-b397-c6c77c3956d9",
+				"method": "POST"
+			},
+			{
+				"id": "884881c7-393f-40bd-93dd-ec698c77d6fd",
+				"method": "POST"
+			},
+			{
+				"id": "995090a7-f292-43e0-b20a-97ca2051d869",
+				"method": "GET"
+			},
+			{
+				"id": "ab4f3aec-72ee-473d-9e1d-ab109fb09e2e",
+				"method": "PUT"
+			},
+			{
+				"id": "ca7ee0f6-1be5-4cd1-882a-b13919370799",
+				"method": "DELETE"
+			},
+			{
+				"id": "ca4fcb65-8d74-4156-ba99-ed112c9ac213",
+				"method": "GET"
+			},
+			{
+				"id": "e8470410-f681-40f3-af01-3d8c094ca667",
+				"method": "PUT"
+			},
+			{
+				"id": "fcd559f1-8d5e-4cb4-82e4-fe2ff34d2da5",
+				"method": "POST"
+			},
+			{
+				"id": "83550e9a-d95e-437a-aadb-83fa26fdccc3",
+				"method": "DELETE"
+			},
+			{
+				"id": "20d225b6-ddf4-420d-98bf-9a3df1fa124b",
+				"method": "POST"
+			},
+			{
+				"id": "0932536e-43e2-40ac-b377-b2c43e019ab6",
+				"method": "GET"
+			},
+			{
+				"id": "35601ee2-5170-4cc8-9e15-a45edc2f9862",
+				"method": "DELETE"
+			},
+			{
+				"id": "7f77b5f5-4991-43a3-9207-7f4de5715e72",
+				"method": "GET"
+			},
+			{
+				"id": "dff4c9f3-27a5-4d04-83ee-8526bd035b98",
+				"method": "GET"
+			},
+			{
+				"id": "0d69bfdc-d093-427c-87b1-6aaf81a84a89",
+				"method": "GET"
+			},
+			{
+				"id": "a3ec1d6d-97b9-4cf5-afa9-7ecf956e1ca3",
+				"method": "POST"
+			},
+			{
+				"id": "250f248d-7984-4362-b554-dee2b8e11ac3",
+				"method": "GET"
+			},
+			{
+				"id": "0103b3f1-0587-4144-9216-6121e4baeb80",
+				"method": "PUT"
+			},
+			{
+				"id": "e2b90b6e-0ba3-4927-b1df-2ff301b15cea",
+				"method": "DELETE"
+			},
+			{
+				"id": "43916f9d-8a08-49c5-8bc0-40102368a373",
+				"method": "POST"
+			},
+			{
+				"id": "cf3b6547-697f-4614-89b8-5bbcc70909e9",
+				"method": "GET"
+			},
+			{
+				"id": "34213baa-1db9-4bde-b945-07f94aa37a14",
+				"method": "GET"
+			},
+			{
+				"id": "e065a3b6-a5e5-42fd-937a-3af59c6a22c7",
+				"method": "GET"
+			},
+			{
+				"id": "d597586b-4516-4374-bdd2-4afa44ae9b2b",
+				"method": "GET"
+			},
+			{
+				"id": "1b241352-a30d-4253-8d22-3ccb396e9516",
+				"method": "DELETE"
+			},
+			{
+				"id": "e90084ce-0952-4f66-9ef6-f65781813784",
+				"method": "GET"
+			},
+			{
+				"id": "f1de4233-fa2c-4d7c-b99e-ec0366ac05ba",
+				"method": "POST"
+			},
+			{
+				"id": "d2f706e1-46e1-46c4-ab6e-3f80a26e24ae",
+				"method": "DELETE"
+			},
+			{
+				"id": "2873f748-c535-4c74-8d2d-d7fd022a6c01",
+				"method": "POST"
+			},
+			{
+				"id": "515060b2-050e-4816-854c-7c7d6bf92462",
+				"method": "DELETE"
+			},
+			{
+				"id": "5d22adbb-134b-4d4c-b67f-d10936e6a447",
+				"method": "GET"
+			},
+			{
+				"id": "2aa44098-e6ab-4338-9d7c-6c2d9864320a",
+				"method": "GET"
+			},
+			{
+				"id": "2cc6556d-50e5-4361-a3c4-cdf0f15f6b78",
+				"method": "GET"
+			},
+			{
+				"id": "22f14010-01e4-45cc-b55c-2c873a2b8dca",
+				"method": "POST"
+			},
+			{
+				"id": "f34521ce-fe3b-455d-84a3-583a102fea85",
+				"method": "GET"
+			},
+			{
+				"id": "69834b40-e4b4-4751-9155-28e4bbaab3ae",
+				"method": "GET"
+			},
+			{
+				"id": "d5a791a0-fc7a-41f5-889a-d7b25bae5bfe",
+				"method": "GET"
+			},
+			{
+				"id": "2398a2ff-6016-4ad7-be50-2cf9799cce82",
+				"method": "GET"
+			},
+			{
+				"id": "4401c623-7cb6-4552-b562-c62941e589ec",
+				"method": "POST"
+			},
+			{
+				"id": "7881b112-7791-41af-892f-5fb2f7e521e7",
+				"method": "GET"
+			},
+			{
+				"id": "e1f10331-3aa1-48c2-8afe-bc8ff9020628",
+				"method": "PUT"
+			},
+			{
+				"id": "7f5c1ec2-2a47-455c-bf74-4dbed5ca96ce",
+				"method": "DELETE"
+			},
+			{
+				"id": "8dc0c76e-88dc-4b91-b5f8-9d3197eb6d4a",
+				"method": "POST"
+			},
+			{
+				"id": "8929f2c2-7338-4483-bbc4-05cc2f2c4ae8",
+				"method": "POST"
+			},
+			{
+				"id": "a4cb3900-d1cd-4a55-a317-4a8effc56bc5",
+				"method": "POST"
+			},
+			{
+				"id": "4dd9566a-2e00-40a5-8d48-351e179fcc77",
+				"method": "POST"
+			},
+			{
+				"id": "c403d9e4-47a3-4a7a-be66-b9c723911a02",
+				"method": "GET"
+			},
+			{
+				"id": "1e5a556c-1841-43f2-8151-8af82387a1a8",
+				"method": "POST"
+			},
+			{
+				"id": "5c1ce771-04ef-4d4e-bbe8-373e95b10d89",
+				"method": "PUT"
+			},
+			{
+				"id": "8f916f8c-0520-432b-9eee-6760f44853a1",
+				"method": "DELETE"
+			},
+			{
+				"id": "6ed1191d-a526-4ed9-901a-c5ad1cf8379c",
+				"method": "GET"
+			},
+			{
+				"id": "cbbbd9bb-d5a0-48c6-93cd-de22ea65bc57",
+				"method": "PUT"
+			},
+			{
+				"id": "38b10144-c1fb-46d2-b9e5-d6536e9493f9",
+				"method": "DELETE"
+			},
+			{
+				"id": "a6e1a033-7e66-4bc4-8168-05ac3de8f82f",
+				"method": "PUT"
+			},
+			{
+				"id": "70679c8d-07bc-4d90-93d5-82650fc17516",
+				"method": "GET"
+			},
+			{
+				"id": "0484c27f-9451-457a-9b13-b89a0dc8d0af",
+				"method": "GET"
+			},
+			{
+				"id": "73d6a52a-6a00-4859-9e0a-9dcdaff68556",
+				"method": "GET"
+			},
+			{
+				"id": "9ee02191-2bf7-460a-9019-114b74991701",
+				"method": "POST"
+			},
+			{
+				"id": "229d5eb4-06a3-4df4-b1db-378d4953bfad",
+				"method": "GET"
+			},
+			{
+				"id": "d0ef6373-7fde-4b0a-a439-8e358ac419a8",
+				"method": "GET"
+			},
+			{
+				"id": "db0e7eba-886f-4156-af42-570490c8f671",
+				"method": "GET"
+			},
+			{
+				"id": "10eddb36-34c0-4d93-8455-25f1edd5b570",
+				"method": "GET"
+			},
+			{
+				"id": "61dccf31-24bf-468d-889f-e6325fb48865",
+				"method": "POST"
+			},
+			{
+				"id": "9e77e493-08c5-440a-82c7-45d0410b73ed",
+				"method": "POST"
+			},
+			{
+				"id": "3ba9a42e-b031-4ed0-a088-90eb964476db",
+				"method": "GET"
+			},
+			{
+				"id": "fa42285d-3e13-444c-93f6-3f6118fabeb4",
+				"method": "DELETE"
+			},
+			{
+				"id": "042e3c17-66ef-4af5-8cc8-ee175ca858dc",
+				"method": "PUT"
+			},
+			{
+				"id": "4ed15a80-a881-4b32-b564-f29c6c048dc2",
+				"method": "GET"
+			},
+			{
+				"id": "13a7acff-56ce-47a8-ac20-64e9b615aae2",
+				"method": "GET"
+			},
+			{
+				"id": "d24ee267-4fee-4d6f-820f-973088269292",
+				"method": "POST"
+			},
+			{
+				"id": "35db8b1c-8386-4adb-9c85-60f0217f5ec4",
+				"method": "GET"
+			},
+			{
+				"id": "d51b96fb-6037-43aa-bf39-852103c0b1e4",
+				"method": "PUT"
+			},
+			{
+				"id": "288357e9-f896-420d-ba77-1b2e5343014e",
+				"method": "DELETE"
+			},
+			{
+				"id": "064d9a59-bcfe-42d8-b83d-0a528242e84d",
+				"method": "GET"
+			}
+		]
+	}
+}
